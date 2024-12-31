@@ -16,7 +16,7 @@ def calculer_energie_totale(csv_file):
     # Lire le fichier CSV
     data = pd.read_csv(csv_file, delim_whitespace=True, comment='#')  # `delim_whitespace` pour gérer les espaces
     data = data.iloc[1:]  # Ignorer la première ligne
-    consommation_totale = data.iloc[:, 1:].sum().sum() / 1e5  # µJ -> J
+    consommation_totale = data.iloc[:, 1:].sum().sum() / 1e6  # µJ -> J
     return consommation_totale
 
 
