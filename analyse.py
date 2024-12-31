@@ -47,7 +47,7 @@ for sheet_name, df in sheet_data.items():
         if pd.notna(execute_command):
             print(f"🚀 Exécution avec la commande : {execute_command}")
             start_time = time.time()  # Début du chronomètre
-            mojitos = subprocess.Popen(["./mojitos/mojitos", "-r", "-f", "2", "-o", "data.csv"])
+            mojitos = subprocess.Popen(["sudo","./mojitos/mojitos", "-r", "-f", "2", "-o", "data.csv"])
             execute_result = subprocess.run(execute_command, shell=True, capture_output=True, text=True)
             mojitos.terminate()
             end_time = time.time()  # Fin du chronomètre

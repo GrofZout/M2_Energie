@@ -16,6 +16,8 @@ fi
 # Installer les bibliothèques Python nécessaires
 sudo pip install mpi4py matplotlib numpy argparse pandas
 
+pip install mpi4py matplotlib numpy argparse pandas
+
 echo "Installation terminée ! Tous les paquets et bibliothèques nécessaires sont installés."
 
 echo 1400000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
