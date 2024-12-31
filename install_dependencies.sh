@@ -4,7 +4,7 @@
 sudo apt update
 
 # Installer les paquets système nécessaires
-sudo apt install -y openjdk-21-jdk-headless gcc libopenmpi-dev python3 python3-dev libomp-dev
+sudo apt install -y openjdk-17-jdk-headless gcc libopenmpi-dev python3 python3-dev libomp-dev
 
 # Vérifier si pip est installé, sinon l'installer
 if ! command -v pip &> /dev/null
